@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github users</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        font-size: 10px;
+      }
+
+      section {
+        padding: 3rem 5rem;
+        overflow: scroll;
+        height: 100vh;
+        background-image: linear-gradient(to top left, white, aqua, white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      article { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .card {
+        width: 20vw;
+        padding: 1rem;
+        background-color: rgba(219, 0, 227, 0.392);
+        display: flex;
+        border-radius: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        transition-property: all;
+        transition-duration: 0.5s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        border-radius: 1rem;
+        width: 100%;
+      }
+      .card h3 {
+        font-size: 2rem;
+        text-transform: capitalize;
+      }
+
+      .card a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: rgba(219, 0, 227, 1);
+      }
+
+      form {
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+        width: 50vw;
+      }
+
+      input {
+        font-size: 2rem;
+        padding: 1rem 3rem;
+        border: none;
+        outline: none;
+        border-radius: 1rem;
+      }
+
+      button {
+        font-size: 1.8rem;
+        padding: 1rem;
+
+        border-radius: 1rem;
+        border-color: aqua;
+      }
+
+      button:hover {
+        background-color: rgb(0, 213, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <section><article class="allusers"></article></section> -->
+    <section>
+      <form>
+        <input type="text" name="user" />
+        <button>Search</button>
+      </form>
+      <article class="searchuser"></article>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
+
+
